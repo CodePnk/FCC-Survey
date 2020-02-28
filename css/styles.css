@@ -5,16 +5,20 @@ body {
 #survey-form {
     background-color: #ffa400;
     padding: 10px;
-    max-width: 75%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    border-radius: 10px;
+    min-width: 325px;
 }
 
-ul {
+li {
     list-style-type: none;
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 .header-flex {
     display: flex;
     flex-direction: row;
@@ -45,10 +49,6 @@ ul {
     margin-right: 15px;
 }
 
-#pizzabox-img {
-    max-height: 150px;
-}
-
 #survey-form ul li {
     padding: 10px;
 }
@@ -62,27 +62,13 @@ button {
 .list-flex-col {
     display: flex;
     flex-direction: column;
-
 }
 
 .list-flex-row {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-}
-
-.column-1 {
-    margin-right: 130px;
-}
-
-.column-2 {
-    margin-right: 200px;
-}
-.list-flex div {
-    padding-top: 10px;
 }
 
 #submit {
     max-width: 45%;
-
 }
