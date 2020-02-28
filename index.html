@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Trade+Winds&display=swap" rel="stylesheet"> 
+    <title>Pizza Survey</title>
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <img src="pizza.png" alt="slice of pizza">
+            <h1 id="title">Pizza Survey</h1>
+        </div>
+        <p id="description">Are you a pizza addict? If so you came to the right place!</p>
+    </header>
+    <form id="survey-form">
+        <ul>
+            <div class="list-flex-row">
+                <div class="column-1">
+                    <li>
+                        <label id="name-label" for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter name here!" required>
+                    </li>
+                    <li>
+                        <label id="email-label" for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter Email here!" required>
+                    </li>
+                    <li>
+                        <label id="number-label" for="number">Age:</label>
+                        <input type="number" id="number" placeholder="Enter Age!" required min="0" max="100">
+                    </li>
+                </div>
+                <div class="column-2">
+                    <img src="pizzabox.png" alt="pizza box" id="pizzabox-img">
+                </div>
+            </div>
+
+            <li>
+                <label id="dropdown-label" for="dropdown">How much do you like pizza?:</label>
+                <select id="dropdown">
+                    <option disabled>Pick an option!</option>
+                    <option>Eh. It is alright.</option>
+                    <option>I enjoy it!</option>
+                    <option>I LOVE PIZZA!</option>
+                </select>
+            </li>
+            <li>
+                <legend>How often do you eat pizza a month?</legend>
+                <input type="radio" id="option1" name="pizza-frequency" value="1-2">
+                <label for="option1">1-2</label>
+                <input type="radio" id="option2" name="pizza-frequency" value="3-5">
+                <label for="option2">3-5</label>
+                <input type="radio" id="option3" name="pizza-frequency" value="6+">
+                <label for="option3">6+</label>
+            </li>
+            <li class="list-flex-col">
+                <legend>What do you value most in the company you order pizza from?</legend>
+                <div>
+                    <input type="checkbox" id="rewards" name="perks" value="rewards">
+                    <label id="rewards-label" for="rewards">Rewards Program</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="price" name="perks" value="price">
+                    <label id="price-label" for="price">Price</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="service" name="perks" value="service">
+                    <label id="service-label" for="service">Service</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="coupons" name="perks" value="coupons">
+                    <label id="coupons-label" for="coupons">Coupons</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="quality" name="perks" value="quality">
+                    <label id="quality-label" for="quality">Quality</label>
+                </div>
+            </li>
+            <li class="list-flex-col">
+                <label for="comment">Where is your favorite place to get pizza? Please explain why!</label>
+                <textarea id="comment" name="user-commment"></textarea>
+            </li>
+            <li class="list-flex-row">
+                <button type="submit" id="submit">Submit!</button>
+            </li>
+        </ul>
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

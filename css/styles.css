@@ -1,0 +1,88 @@
+body {
+    background-color: #232528;
+}
+
+#survey-form {
+    background-color: #ffa400;
+    padding: 10px;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#title {
+    align-self: center;
+}
+
+#title,
+#description {
+    color: #ef6e3e;
+    font-family: "trade winds";
+}
+
+#description {
+    padding: 10px;
+    text-align: center;
+}
+
+#name-label,
+#email-label {
+    margin-right: 5px;
+}
+
+#number-label{
+    margin-right: 15px;
+}
+
+#pizzabox-img {
+    max-height: 150px;
+}
+
+#survey-form ul li {
+    padding: 10px;
+}
+
+label,
+legend,
+button {
+    font-family: "anton";
+}
+
+.list-flex-col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column-1 {
+    margin-right: 130px;
+}
+
+.column-2 {
+    margin-right: 200px;
+}
+.list-flex div {
+    padding-top: 10px;
+}
+
+#submit {
+    max-width: 45%;
+
+}
